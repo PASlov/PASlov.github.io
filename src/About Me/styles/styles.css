@@ -1,0 +1,145 @@
+:root {
+  --background: yellow;
+  --header-height: 3rem;
+  --text: #202a44;
+  --accent-text: #ea0c86;
+  --background-fade: rgba(255, 217, 4, 0.97);
+  --large-padding: 1rem;
+  --small-padding: calc(var(--large-padding) / 2);
+  --body-width: 30rem;
+  --hero-height: var(--body-width);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a,
+a:visited {
+  color: #f2137b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  align-items: center;
+}
+
+body {
+  background-color: var(--background);
+  display: grid;
+  grid-template-rows: var(--header-height) auto var(--header-height);
+  color: var(--text);
+}
+
+body > header {
+  grid-row: 1;
+}
+
+body > main {
+  grid-row: 2;
+}
+
+body > footer {
+  grid-row: 3;
+}
+
+body > main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  min-width: var(--body-width);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+body > header,
+body > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--background-fade);
+  padding: var(--large-padding);
+}
+
+body > header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--large-padding);
+  align-items: center;
+}
+
+body > header .logo {
+  background-color: #fdf9f9;
+  padding: var(--small padding);
+  font-size: 40px;
+}
+
+body > footer {
+  justify-content: center;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.hero {
+  min-height: var(--hero-height);
+  padding: var(--large-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--accent-text);
+  line-height: 1.6;
+}
+
+section.hero > * {
+  background-color: rgba(236, 245, 202, 0.3);
+  padding: var(--large-padding);
+  min-width: var(--body-width);
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 170px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+section.signposts {
+  flex: 1 0 auto;
+}
+
+section.signposts > main {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-gap: var(--large-padding);
+}
