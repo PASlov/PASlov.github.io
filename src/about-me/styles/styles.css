@@ -64,7 +64,8 @@ body > main {
   margin: 0 auto;
 }
 
-body > header, body > footer {
+body > header,
+body > footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
