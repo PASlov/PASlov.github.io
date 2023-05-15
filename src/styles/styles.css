@@ -16,8 +16,9 @@
     box-sizing: border-box;
     
 }
+
 html, body{
-height: 100vh;
+mid-height: 100%;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -32,6 +33,7 @@ a:hover{
 
 header{
   align-items: center ;
+height: fit-content;
 }
 
 body{
@@ -66,7 +68,7 @@ body > header {
             align-items: center;
             flex-shrink: 0;
             background-color: var(--background-fade);
-            padding: var(--large-padding);
+            padding: var(--small-padding);
         }
 
         body > header nav{
@@ -79,7 +81,7 @@ body > header {
         body > header .logo {
             background-color:#fdf9f9; 
             padding: var(--small padding);
-            font-size: 40px;
+            font-size: 20px;
 
         }
 

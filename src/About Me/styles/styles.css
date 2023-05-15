@@ -33,6 +33,7 @@ a:hover {
 
 header {
   align-items: center;
+  height: fit-content;
 }
 
 body {
@@ -63,14 +64,13 @@ body > main {
   margin: 0 auto;
 }
 
-body > header,
-body > footer {
+body > header, body > footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
   background-color: var(--background-fade);
-  padding: var(--large-padding);
+  padding: var(--small-padding);
 }
 
 body > header nav {
@@ -82,8 +82,8 @@ body > header nav {
 
 body > header .logo {
   background-color: #fdf9f9;
-  padding: var(--small padding);
-  font-size: 40px;
+  padding: var(--small-padding padding);
+  font-size: 20px;
 }
 
 body > footer {
@@ -91,7 +91,7 @@ body > footer {
 }
 
 body {
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/doughnut.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,12 +116,13 @@ section.hero > * {
 
 div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 5px solid #df099f;
   width: 180px;
+  background-color: rgba(236, 245, 202, 0.6);
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 5px solid #0af3e7;
 }
 
 div.gallery img {
